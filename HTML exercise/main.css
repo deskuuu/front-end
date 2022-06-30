@@ -1,0 +1,67 @@
+body {
+  background-color: lightblue;
+  font-family: "League Gothic", sans-serif;
+  font-family: "Titan One", cursive;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  width: 95%;
+  border: 5px solid gray;
+  margin: 2%;
+  background-color: rgba(214, 108, 108, 0.801);
+}
+
+li {
+  list-style-type: none;
+}
+
+aside {
+  width: 95%;
+  margin: 2%;
+  font-style: italic;
+  background-color: rgb(13, 182, 117);
+}
+
+#projects p{
+
+}
+
+span {
+  color: black;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 2.4rem;
+  background-color: #20262e;
+  color: #fff;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  margin: .5rem 2rem;
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+  background-color: rgb(46, 53, 62);
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Titan+One&display=swap");
+
+footer {
+  color: blueviolet;
+  background-color: rgba(214, 108, 108, 0.801);
+  text-align: center;
+  text-decoration-color: rgba(15, 1, 1, 0.808);
+}
