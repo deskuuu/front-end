@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML DOM Events</h1>
+
+<button onclick="myFunction()">Click me</button>
+
+<ul id="ingredients"></p>
+  
+  <form>
+    <label for="input">Input:</label><br>
+    <input type="text" id="input" name="input"><br>
+  </form>
+
+  <button onclick="getElementById('output').innerHTML=fiftyCut(getElementById('input').value)">Output:</button>
+<p id="output"></p>
+
+<script>
+
+function fiftyCut(name) {
+  try {
+    return name.substring(name.length / 2);
+  } catch (err) {
+    console.log(err.message);
+  }
+}
+
+function myFunction() {
+  populateList();
+}
+
+function createListItem(ingredient, id) {
+  var htmlString =
+    '<li id="ingredient-' +
+    id +
+    '" class="li-ingredient">' +
+    ingredient +
+    "</li>";
+  return htmlString;
+}
+
+function createList(listOfIngredients) {
+  var htmlString = "";
+  for (var i = 0; i < listOfIngredients.length; i = i + 1) {
+    htmlString = htmlString + createListItem(listOfIngredients[i], i);
+  }
+  return htmlString;
+}
+
+var listOfLanguages = ["Eng","BG","DE"];
+
+function populateList() {
+  var ulElement = document.getElementById("ingredients");
+  ulElement.innerHTML = createList(listOfLanguages);
+}
+
+//Given a list of languages that you speak,
+//create the list of your spoken languages dynamically using Javascript.
+//(populate a list after clicking a button)
+</script>
+
+</body>
+</html>
